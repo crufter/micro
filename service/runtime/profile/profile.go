@@ -68,13 +68,13 @@ func Platform() []string {
 		"MICRO_RUNTIME=service",
 		"MICRO_STORE=service",
 		// now set the addresses
-		"MICRO_AUTH_ADDRESS=micro-auth.default.svc:8010",
-		"MICRO_BROKER_ADDRESS=micro-store.default.svc:8001",
-		"MICRO_NETWORK_ADDRESS=micro-network.default.svc:8080",
-		"MICRO_REGISTRY_ADDRESS=micro-registry.default.svc:8000",
-		"MICRO_ROUTER_ADDRESS=micro-runtime.default.svc:8084",
-		"MICRO_RUNTIME_ADDRESS=micro-runtime.default.svc:8088",
-		"MICRO_STORE_ADDRESS=micro-store.default.svc:8002",
+		"MICRO_AUTH_ADDRESS=micro-auth.platform.svc:8010",
+		"MICRO_BROKER_ADDRESS=micro-store.platform.svc:8001",
+		"MICRO_NETWORK_ADDRESS=micro-network.platform.svc:8080",
+		"MICRO_REGISTRY_ADDRESS=micro-registry.platform.svc:8000",
+		"MICRO_ROUTER_ADDRESS=micro-runtime.platform.svc:8084",
+		"MICRO_RUNTIME_ADDRESS=micro-runtime.platform.svc:8088",
+		"MICRO_STORE_ADDRESS=micro-store.platform.svc:8002",
 		// set the athens proxy to speedup builds
 		"GOPROXY=http://athens-proxy",
 	}
