@@ -299,6 +299,9 @@ func setup(app *ccli.App) {
 			}
 		}
 
+		fmt.Println(os.Environ())
+		fmt.Println("MICRO_STORE_ADDRESS:", ctx.String("MICRO_STORE_ADDRESS"))
+		fmt.Println("MICRO_STORE:", ctx.String("MICRO_STORE_ADDRESS"))
 		return nil
 	}
 }
